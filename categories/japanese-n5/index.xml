@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Nep Gear</title>
-    <link>https://nep-gear.github.io/post/index.xml</link>
-    <description>Recent content in Posts on Nep Gear</description>
+    <title>Japanese N5 on Nep Gear</title>
+    <link>https://nep-gear.github.io/categories/japanese-n5/index.xml</link>
+    <description>Recent content in Japanese N5 on Nep Gear</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nep-gear.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Welcome to my blog</title>
-      <link>https://nep-gear.github.io/2020/06/welcome-to-my-blog/</link>
-      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://nep-gear.github.io/2020/06/welcome-to-my-blog/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;hi-in-this-blog-i-will-post-some-interesting-things-that-i-learn-in-my-travels-and-studies-around-the-world-with-special-focus-in-my-two-favorities-contries-japan-and-italy&#34;&gt;Hi, in this blog I will post some interesting things that I learn in my travels and studies around the world with special focus in my two favorities contries Japan and Italy.&lt;/h1&gt;
-
-&lt;h1 id=&#34;i-mostly-post-in-english-but-you-will-observe-that-i-still-need-to-improve-my-grammar-skills&#34;&gt;I mostly post in english but you will observe that I still need to improve my grammar skills&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nep-gear.github.io/img/karen_chi.png&#34; align=&#34;center&#34; style =&#34;float:center&#34;&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;somethimes-i-post-in-spanish-in-the-future-maybe-i-will-also-post-in-italian-or-japanese&#34;&gt;Somethimes I post in Spanish, in the future maybe I will also post in Italian or Japanese :)&lt;/h1&gt;</description>
-    </item>
+    <atom:link href="https://nep-gear.github.io/categories/japanese-n5/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Japanese vocabulary N5: school</title>
