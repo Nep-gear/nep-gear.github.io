@@ -164,10 +164,6 @@ Ejemplo:
 &lt;p&gt;7.- Guardar el archivo&lt;/p&gt;
 
 &lt;div class=&#34;alert note &#34;&gt;
-  &lt;p&gt;Se recomienda crear una nueva carpeta para guardar los archivos generados por Texmaker. Al guardar el documento se le debe añadir la extensión .tex para evitar errores.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;alert note &#34;&gt;
   &lt;p&gt;Se recomienda crear una nueva carpeta para guardar los archivos generados por Texmaker para cada documento a realizar.&lt;/p&gt;
 &lt;/div&gt;
 
@@ -194,6 +190,13 @@ Libro online gratuito de LaTeX: &lt;a href=&#34;http://www.tec-digital.itcr.ac.c
 &lt;p&gt;Página oficial de Texmaker: &lt;a href=&#34;http://www.xm1math.net/texmaker/index.html&#34;&gt;http://www.xm1math.net/texmaker/index.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;LaTeX wiki: &lt;a href=&#34;http://es.wikipedia.org/wiki/LaTeX&#34;&gt;http://es.wikipedia.org/wiki/LaTeX&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;proximamente&#34;&gt;Proximamente:&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Best practices (mejores prácticas) cuando se trabaja con latex&lt;/li&gt;
+&lt;li&gt;Los modos de compilación en Texmaker, porque que no aparece mi bibliografia?&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;figure&gt;
   &lt;img src=&#34;https://nep-gear.github.io/img/duda.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
