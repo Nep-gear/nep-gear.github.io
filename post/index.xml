@@ -37,6 +37,145 @@ I mostly post in english but you will observe that I still need to improve my gr
     </item>
     
     <item>
+      <title>LaTeX: instalación MiKTeX y Texmaker (Windows)</title>
+      <link>https://nep-gear.github.io/2017/11/latex-instalaci%C3%B3n-miktex-y-texmaker-windows/</link>
+      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://nep-gear.github.io/2017/11/latex-instalaci%C3%B3n-miktex-y-texmaker-windows/</guid>
+      <description>&lt;p&gt;&lt;h5 style=&#39;text-align: justify;&#39;&gt;
+Con este post aprenderas como intalar Latex y MiKTeX en Windows.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;algo-de-teoría&#34;&gt;Algo de teoría:&lt;/h1&gt;
+
+&lt;p&gt;&lt;h5 style=&#39;text-align: justify;&#39;&gt;
+LaTeX es un sistema de composición de textos, orientado especialmente a la creación de libros, documentos científicos y técnicos que contengan fórmulas matemáticas. Para utilizar LaTeX en Windows se necesita instalar una distribución de LaTeX y un editor de texto. MiKTeX es una distribución de LaTeX que traduce los comandos de LaTeX a texto. Texmaker es un editor libre, gratuito y multiplataforma de LaTeX.&lt;/p&gt;
+
+&lt;h1 id=&#34;procedimeinto&#34;&gt;Procedimeinto:&lt;/h1&gt;
+
+&lt;p&gt;&lt;h5 style=&#39;text-align: justify;&#39;&gt;&lt;/p&gt;
+
+&lt;p&gt;Siga los siguientes pasos para instalar y configurar LaTeX con TexMaker y MiKTeX. Primero hay que descargar los programas necesario y después instalarlos en un orden especifico.&lt;/p&gt;
+
+&lt;p&gt;1.- Descargar el motor de LaTeX MiKTeX desde el siguiente link:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://miktex.org/download&#34;&gt;http://miktex.org/download&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/latex/latex4.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+  &lt;figcaption&gt;Figura 1.- Descargar MikTeX&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;2.- Descargar el ejecutable de Texmaker para  Windows desde el siguiente link:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.xm1math.net/texmaker/download.html&#34;&gt;http://www.xm1math.net/texmaker/download.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/latex/latex5.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+  &lt;figcaption&gt;Figura 2.- Descargar Texmaker&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;5.- Instalar en orden el siguiente orden los programas descargados:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MikTeX&lt;/li&gt;
+&lt;li&gt;Texmaker&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;ejemplo-simple&#34;&gt;Ejemplo simple:&lt;/h1&gt;
+
+&lt;p&gt;&lt;h5 style=&#39;text-align: justify;&#39;&gt;
+6.- Abrir el programa Texmaker y crear un nuevo documento de texto seleccionado Archivo/Nuevo&lt;/p&gt;
+
+&lt;p&gt;7.- Escribir el siguiente ejemplo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\documentclass{article}     %Tipo de documento
+\begin{document}            %Inicio del documento
+Ejemplo:
+\end{document}              %Final del documento
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;8.- Guardar el archivo&lt;/p&gt;
+
+&lt;div class=&#34;alert note &#34;&gt;
+  &lt;p&gt;Se recomienda crear una nueva carpeta para guardar los archivos generados por Texmaker. Al guardar el documento se le debe añadir la extensión .tex para evitar errores.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert note &#34;&gt;
+  &lt;p&gt;Se recomienda crear una nueva carpeta para guardar los archivos generados por Texmaker para cada documento a realizar.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;h5 style=&#39;text-align: justify;&#39;&gt;
+9.- Compilar el documento haciendo clic en la flecha que está a lado de la opción “Compilación rápida”.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/latex/latex6.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+  &lt;figcaption&gt;Figura 3.- Compilar&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;10.- Una vez terminada la compilación en lado derecho de la interfaz de Texmaker se muestra el documento PFD generado, el cual se encuentra dentro de la carpeta donde se guardo el documento de texto.&lt;/p&gt;
+
+&lt;div class=&#34;alert note &#34;&gt;
+  &lt;p&gt;Proximamente se publicarán tutoriales para realizar artículos para la IEEE y AMSE&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;h5&gt;
+Libro online gratuito de LaTeX: &lt;a href=&#34;http://www.tec-digital.itcr.ac.cr/revistamatematica/Libros/LATEX/LaTeX_2013.pdf&#34;&gt;http://www.tec-digital.itcr.ac.cr/revistamatematica/Libros/LATEX/LaTeX_2013.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Página oficial de TeXLive: &lt;a href=&#34;http://www.tug.org/texlive/&#34;&gt;http://www.tug.org/texlive/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Página oficial de Texmaker: &lt;a href=&#34;http://www.xm1math.net/texmaker/index.html&#34;&gt;http://www.xm1math.net/texmaker/index.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;LaTeX wiki: &lt;a href=&#34;http://es.wikipedia.org/wiki/LaTeX&#34;&gt;http://es.wikipedia.org/wiki/LaTeX&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/duda.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cambiar idioma del diccionario de corrección ortográfica Texmaker a español</title>
+      <link>https://nep-gear.github.io/2017/11/cambiar-idioma-del-diccionario-de-correcci%C3%B3n-ortogr%C3%A1fica-texmaker-a-espa%C3%B1ol/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://nep-gear.github.io/2017/11/cambiar-idioma-del-diccionario-de-correcci%C3%B3n-ortogr%C3%A1fica-texmaker-a-espa%C3%B1ol/</guid>
+      <description>&lt;p&gt;&lt;h5 style=&#39;text-align: justify;&#39;&gt;
+Para cambiar el idioma del diccionario de corrección ortográfica a español realizar lo siguiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Seleccionar Opciones -&amp;gt; Configurar Texmaker (figura 1).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/latex/latex1.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+  &lt;figcaption&gt;Figura 1.- Configurar Texmaker&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;2.- En Editor seleccionar el recuadro que se muestra en la figura 2.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/latex/latex2.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+  &lt;figcaption&gt;Figura 2.- Cambiar diccionario&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;3.- Seleccionar el archivo es_ES.dic y dar clic en Abrir (figura 3).&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&#34;https://nep-gear.github.io/img/latex/latex3.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+&lt;figcaption&gt;Figura 3.- Seleccionar es_ES.dic&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;4.- Finalmente dar clic en Aceptar.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/duda.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
       <title>Japanese vocabulary N5: school</title>
       <link>https://nep-gear.github.io/2017/10/japanese-vocabulary-n5-school/</link>
       <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
