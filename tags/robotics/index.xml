@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics on Nep Gear</title>
+    <link>https://nep-gear.github.io/tags/robotics/index.xml</link>
+    <description>Recent content in Robotics on Nep Gear</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://nep-gear.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Conferencias importantes en robótica</title>
+      <link>https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/</link>
+      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/</guid>
+      <description>&lt;p&gt;Este post direcciona contine link e información de algunas de las conferencia más importantes en róbitca.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;principales-congresos-en-el-mundo&#34;&gt;Principales congresos en el mundo:&lt;/h2&gt;
+
+&lt;p&gt;De todos los congresos en el mundo en robótica solo dos destacan por ser los de mayor calidad, importancia y competitvidad. Estos son el ICRA y el IROS.&lt;/p&gt;
+
+&lt;h3 id=&#34;international-conference-on-robotics-and-automation-icra&#34;&gt;International Conference on Robotics and Automation (ICRA)&lt;/h3&gt;
+
+&lt;p&gt;Celebrado regularmente a finales de mayo con deadline para mandar los artículos a principios de septiembre&lt;/p&gt;
+
+&lt;p&gt;Próximos ICRA:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2019 Canada:&lt;/strong&gt; 20-24 de Mayo del 2019, deadline: 10 Septiembre 2018 (&lt;a href=&#34;http://www.icra2019.org/&#34;&gt;http://www.icra2019.org/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2020 Francia:&lt;/strong&gt; del 31 de Mayo al 4 de junio, deadline: 15 September 2019 (sin pagina oficial aún)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/conf/icra.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+  &lt;figcaption&gt;Entrada al ICRA 2016 en estocolmo&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;international-conference-on-intelligent-robots-and-systems-iros&#34;&gt;International Conference on Intelligent Robots and Systems  (IROS)&lt;/h3&gt;
+
+&lt;p&gt;Celebrado regularmente a principio de octubre con deadline para mandar los artículos a principios de Marzo:&lt;/p&gt;
+
+&lt;p&gt;Próximos IROS:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2019 China:&lt;/strong&gt;  3-8 de Noviembre del 2019, dealine: aún si fecha y sin página oficial&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;otras-conferencias-importantes&#34;&gt;Otras conferencias importantes:&lt;/h2&gt;
+
+&lt;p&gt;A continuación se da una lista de algunas conferencias importantes en el area de Control, Human-Robot Interaction, Biorobotica y Machine Learning para robotica.&lt;/p&gt;
+
+&lt;h3 id=&#34;ieee-international-conference-on-robot-and-human-interactive-communication-ro-man&#34;&gt;IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2018 China:&lt;/strong&gt;  27-30 de Agosto del 2018, dealine: 5 de Marzo, 2018  &lt;a href=&#34;http://ro-man2018.org/&#34;&gt;http://ro-man2018.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;annual-conference-on-human-robot-interaction&#34;&gt;Annual Conference on Human-Robot Interaction&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2019 Korea&lt;/strong&gt; 11-14 de Marzo, deadline: 10 de Octubre del 2018.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/duda.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

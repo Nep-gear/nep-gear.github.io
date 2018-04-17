@@ -97,6 +97,18 @@
   </url>
   
   <url>
+    <loc>https://nep-gear.github.io/tags/robotics/</loc>
+    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nep-gear.github.io/categories/robotics/</loc>
+    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nep-gear.github.io/tags/</loc>
     <priority>0</priority>
   </url>
