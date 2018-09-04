@@ -7,6 +7,11 @@
   </url>
   
   <url>
+    <loc>https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/</loc>
     <lastmod>2017-11-02T00:00:00+00:00</lastmod>
   </url>
@@ -81,6 +86,18 @@
   <url>
     <loc>https://nep-gear.github.io/categories/latex/</loc>
     <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nep-gear.github.io/tags/nanomsg/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nep-gear.github.io/categories/nep/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

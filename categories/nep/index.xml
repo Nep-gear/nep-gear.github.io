@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nep on Nep Gear</title>
+    <link>https://nep-gear.github.io/categories/nep/index.xml</link>
+    <description>Recent content in Nep on Nep Gear</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://nep-gear.github.io/categories/nep/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Instalar Nanomsg en Python (MAC OX)</title>
+      <link>https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/</guid>
+      <description>&lt;p&gt;Con este post aprenderas a instalar Nanomsg en MAC OX&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;algo-de-teoría&#34;&gt;Algo de teoría:&lt;/h1&gt;
+
+&lt;p&gt;&lt;style=&#39;text-align: justify;&#39;&gt;
+Nanomsg es una librerías de tranferencia de mensajes escrita en C. Esta librería es usada en NEP (Node Primitives) para la creación de arquitecturas de software para robótica. En Mac está librería puede ser instalada para su uso en python de la siguiente manera:&lt;/p&gt;
+
+&lt;h1 id=&#34;procedimiento&#34;&gt;Procedimiento:&lt;/h1&gt;
+
+&lt;p&gt;1.- Abrir la terminal de MAC y escribir el siguiente comando para instalar Homebrew:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot; &amp;lt; /dev/null 2&amp;gt; /dev/null
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Este paso puede requerir la entrada de la contraseña de la computadora.&lt;/p&gt;
+
+&lt;p&gt;2.- Ejecutar el siguiente comando para instalar nanomsg desde Homebrew:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;brew install nanomsg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3.- Descargar la version de python de nanomsg:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/tonysimpson/nanomsg-python&#34;&gt;https://github.com/tonysimpson/nanomsg-python&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;4.- Nanomsg desde HomeBrew se instala en &lt;strong&gt;/usr/local/Cellar/nanomsg/1.0.0/&lt;/strong&gt;, por lo cual es
+necesario editar en archivo &lt;strong&gt;usr_local_setup.cfg&lt;/strong&gt; dentro de la carpeta de &lt;strong&gt;nanomsg-python&lt;/strong&gt; por:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[build_ext]
+include_dirs=/usr/local/Cellar/nanomsg/1.0.0/include
+library_dirs=/usr/local/Cellar/nanomsg/1.0.0/lib
+rpath=/usr/local/Cellar/nanomsg/1.0.0/lib
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;https://nep-gear.github.io/img/duda.png&#34; align=&#34;right&#34; style =&#34;float:center&#34; hspace = &#34;20&#34;&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

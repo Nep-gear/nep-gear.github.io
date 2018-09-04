@@ -1,5 +1,9 @@
 
 
+  
+    
+  
+
 
   
 
@@ -13,25 +17,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.18.1">
-    <title>Robotics</title>
+    <title>Instalar Nanomsg en Python (MAC OX)</title>
     <meta name="author" content="Enrique">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Nanomsg">
 
     <link rel="icon" href="https://nep-gear.github.io/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://nep-gear.github.io/categories/robotics/index.xml">
-    
 
     
-    <meta name="description" content="My personal blog">
-    <meta property="og:description" content="My personal blog">
+    <meta name="description" content="Con este post aprenderas a instalar Nanomsg en MAC OX
+
+">
+    <meta property="og:description" content="Con este post aprenderas a instalar Nanomsg en MAC OX
+
+">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Robotics">
-    <meta property="og:url" content="/categories/robotics/">
+    <meta property="og:title" content="Instalar Nanomsg en Python (MAC OX)">
+    <meta property="og:url" content="/2018/07/instalar-nanomsg-en-python-mac-ox/">
     <meta property="og:site_name" content="Nep Gear">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Nep Gear">
-    <meta name="twitter:description" content="My personal blog">
+    <meta name="twitter:description" content="Con este post aprenderas a instalar Nanomsg en MAC OX
+
+">
     
     
 
@@ -42,6 +50,8 @@
       <meta property="og:image" content="//www.gravatar.com/avatar/de9c4bcf683bde378f3a4a940585a776?s=640">
     
 
+    
+      <meta property="og:image" content="https://nep-gear.github.io/img/logos/tex.png">
     
     
     
@@ -75,7 +85,7 @@ ga('send', 'pageview');
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://nep-gear.github.io/">Nep Gear</a>
@@ -95,7 +105,7 @@ ga('send', 'pageview');
   
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="4">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -191,38 +201,24 @@ ga('send', 'pageview');
 </nav>
 
       
-        
 
-      
-      <div id="main" data-behavior="1"
+      <div id="main" data-behavior="4"
         class="
-               hasCoverMetaIn
+               hasCoverMetaOut
                ">
-        
-          <section class="postShorten-group main-content-wrap">
-            
-            
-              
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-center">
   
-    
+    <h1 class="post-title" itemprop="headline">
+      Instalar Nanomsg en Python (MAC OX)
+    </h1>
   
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
+  <div class="postShorten-meta post-meta">
+  <time itemprop="datePublished" datetime="2018-07-01T00:00:00Z">
     
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/">
-          Conferencias importantes en robótica
-        </a>
-      </h1>
-      <div class="postShorten-meta post-meta">
-  <time itemprop="datePublished" datetime="2017-11-02T00:00:00Z">
-    
-  November 2, 2017
+  July 1, 2018
 
   </time>
   
@@ -230,39 +226,147 @@ ga('send', 'pageview');
   
     <span>in</span>
     
-      <a class="category-link" href="https://nep-gear.github.io/categories/robotics">Robotics</a>
+      <a class="category-link" href="https://nep-gear.github.io/categories/nep">NEP</a>
     
   
 
 
 </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>
-        Este post direcciona contine link e información de algunas de las conferencia más importantes en róbitca.</p>
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Con este post aprenderas a instalar Nanomsg en MAC OX</p>
 
-<p>
-        <br>
-        <a href="https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/" class="postShorten-excerpt_link link">Continue reading</a>
-        
-      </p>
-    </div>
-  </div>
-  
-    <a href="https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/">
-      <div class="postShorten-thumbnailimg">
-        <img alt="" itemprop="image" src="https://nep-gear.github.io/img/logos/nepdam.png"/>
-      </div>
-    </a>
-  
-</article>
+<p></p>
+
+<h1 id="algo-de-teoría">Algo de teoría:</h1>
+
+<p><style='text-align: justify;'>
+Nanomsg es una librerías de tranferencia de mensajes escrita en C. Esta librería es usada en NEP (Node Primitives) para la creación de arquitecturas de software para robótica. En Mac está librería puede ser instalada para su uso en python de la siguiente manera:</p>
+
+<h1 id="procedimiento">Procedimiento:</h1>
+
+<p>1.- Abrir la terminal de MAC y escribir el siguiente comando para instalar Homebrew:</p>
+
+<pre><code class="language-shell">ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; &lt; /dev/null 2&gt; /dev/null
+</code></pre>
+
+<p>Este paso puede requerir la entrada de la contraseña de la computadora.</p>
+
+<p>2.- Ejecutar el siguiente comando para instalar nanomsg desde Homebrew:</p>
+
+<pre><code class="language-shell">brew install nanomsg
+</code></pre>
+
+<p>3.- Descargar la version de python de nanomsg:</p>
+
+<p><a href="https://github.com/tonysimpson/nanomsg-python">https://github.com/tonysimpson/nanomsg-python</a></p>
+
+<p>4.- Nanomsg desde HomeBrew se instala en <strong>/usr/local/Cellar/nanomsg/1.0.0/</strong>, por lo cual es
+necesario editar en archivo <strong>usr_local_setup.cfg</strong> dentro de la carpeta de <strong>nanomsg-python</strong> por:</p>
+
+<pre><code>[build_ext]
+include_dirs=/usr/local/Cellar/nanomsg/1.0.0/include
+library_dirs=/usr/local/Cellar/nanomsg/1.0.0/lib
+rpath=/usr/local/Cellar/nanomsg/1.0.0/lib
+</code></pre>
+
+<figure>
+  <img src="https://nep-gear.github.io/img/duda.png" align="right" style ="float:center" hspace = "20">
+</figure>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://nep-gear.github.io/tags/nanomsg/">Nanomsg</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2020/06/welcome-to-my-blog/" data-tooltip="Welcome to my blog">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/" data-tooltip="Conferencias importantes en robótica">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2018%2f07%2finstalar-nanomsg-en-python-mac-ox%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2018%2f07%2finstalar-nanomsg-en-python-mac-ox%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2018%2f07%2finstalar-nanomsg-en-python-mac-ox%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
 
             
-            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
 
-          </section>
-        
+              
+            
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2018 Enrique. All Rights Reserved
@@ -270,6 +374,92 @@ ga('send', 'pageview');
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2020/06/welcome-to-my-blog/" data-tooltip="Welcome to my blog">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/" data-tooltip="Conferencias importantes en robótica">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2018%2f07%2finstalar-nanomsg-en-python-mac-ox%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2018%2f07%2finstalar-nanomsg-en-python-mac-ox%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2018%2f07%2finstalar-nanomsg-en-python-mac-ox%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <ul class="share-options">
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2018%2f07%2finstalar-nanomsg-en-python-mac-ox%2f">
+        <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2018%2f07%2finstalar-nanomsg-en-python-mac-ox%2f">
+        <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2018%2f07%2finstalar-nanomsg-en-python-mac-ox%2f">
+        <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -499,6 +689,32 @@ $(document).ready(function() {
   });
 });
 </script>
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/nep-gear.github.io\/2018\/07\/instalar-nanomsg-en-python-mac-ox\/';
+          
+            this.page.identifier = '\/2018\/07\/instalar-nanomsg-en-python-mac-ox\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'https-nep-gear-github-io';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
 
 
     
