@@ -37,6 +37,42 @@ I mostly post in english but you will observe that I still need to improve my gr
     </item>
     
     <item>
+      <title>Desarrollo de NEP en MATLAB &lt; 2017b</title>
+      <link>https://nep-gear.github.io/2018/09/desarrollo-de-nep-en-matlab--2017b/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nep-gear.github.io/2018/09/desarrollo-de-nep-en-matlab--2017b/</guid>
+      <description>&lt;p&gt;Para desarrollar NEP en versiones anteriores a 2017.b en Matlab se debe utilizar Java SDK 7.&lt;/p&gt;
+
+&lt;p&gt;Para el desarrollo de .jar que puedan utilizar Netbeans desde el siguiente link:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk-7-netbeans-download-432126.html&#34;&gt;http://www.oracle.com/technetwork/java/javase/downloads/jdk-7-netbeans-download-432126.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Librerías necesarias son:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GSON (&lt;a href=&#34;https://mvnrepository.com/artifact/com.google.code.gson/gson&#34;&gt;https://mvnrepository.com/artifact/com.google.code.gson/gson&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;JeroMQ (&lt;a href=&#34;https://mvnrepository.com/artifact/org.zeromq/jeromq&#34;&gt;https://mvnrepository.com/artifact/org.zeromq/jeromq&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to build .jar:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Right-click on the Project name&lt;/li&gt;
+&lt;li&gt;Select Properties&lt;/li&gt;
+&lt;li&gt;Click Packaging&lt;/li&gt;
+&lt;li&gt;Check Build JAR after Compiling&lt;/li&gt;
+&lt;li&gt;Check Compress JAR File&lt;/li&gt;
+&lt;li&gt;Click OK to accept changes&lt;/li&gt;
+&lt;li&gt;Right-click on a Project name&lt;/li&gt;
+&lt;li&gt;Select Build or Clean and Build&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;.jar is save in &lt;strong&gt;dist&lt;/strong&gt; folder&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Instalar Nanomsg en Python (MAC OX)</title>
       <link>https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
@@ -89,7 +125,7 @@ rpath=/usr/local/Cellar/nanomsg/1.0.0/lib
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/</guid>
-      <description>&lt;p&gt;Este post direcciona contine link e información de algunas de las conferencia más importantes en róbitca.&lt;/p&gt;
+      <description>&lt;p&gt;Este post contiene links e información de algunas de las conferencia más importantes en róbitca.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 

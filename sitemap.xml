@@ -7,6 +7,11 @@
   </url>
   
   <url>
+    <loc>https://nep-gear.github.io/2018/09/desarrollo-de-nep-en-matlab--2017b/</loc>
+    <lastmod>2018-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
   </url>
@@ -42,19 +47,13 @@
   </url>
   
   <url>
-    <loc>https://nep-gear.github.io/categories/italy/</loc>
-    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nep-gear.github.io/tags/italy/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nep-gear.github.io/categories/japan/</loc>
+    <loc>https://nep-gear.github.io/categories/italy/</loc>
     <lastmod>2020-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -66,8 +65,8 @@
   </url>
   
   <url>
-    <loc>https://nep-gear.github.io/categories/japanese-n5/</loc>
-    <lastmod>2017-10-14T00:00:00+00:00</lastmod>
+    <loc>https://nep-gear.github.io/categories/japan/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -78,13 +77,19 @@
   </url>
   
   <url>
-    <loc>https://nep-gear.github.io/categories/latex/</loc>
-    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <loc>https://nep-gear.github.io/categories/japanese-n5/</loc>
+    <lastmod>2017-10-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nep-gear.github.io/tags/latex/</loc>
+    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nep-gear.github.io/categories/latex/</loc>
     <lastmod>2017-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -114,19 +119,31 @@
   </url>
   
   <url>
-    <loc>https://nep-gear.github.io/categories/robotics/</loc>
-    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nep-gear.github.io/tags/robotics/</loc>
     <lastmod>2017-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://nep-gear.github.io/categories/robotics/</loc>
+    <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nep-gear.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nep-gear.github.io/tags/zeromq/</loc>
+    <lastmod>2018-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nep-gear.github.io/categories/zeromq/</loc>
+    <lastmod>2018-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

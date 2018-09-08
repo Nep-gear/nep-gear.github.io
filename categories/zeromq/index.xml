@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zeromq on Nep Gear</title>
+    <link>https://nep-gear.github.io/categories/zeromq/index.xml</link>
+    <description>Recent content in Zeromq on Nep Gear</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://nep-gear.github.io/categories/zeromq/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Desarrollo de NEP en MATLAB &lt; 2017b</title>
+      <link>https://nep-gear.github.io/2018/09/desarrollo-de-nep-en-matlab--2017b/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nep-gear.github.io/2018/09/desarrollo-de-nep-en-matlab--2017b/</guid>
+      <description>&lt;p&gt;Para desarrollar NEP en versiones anteriores a 2017.b en Matlab se debe utilizar Java SDK 7.&lt;/p&gt;
+
+&lt;p&gt;Para el desarrollo de .jar que puedan utilizar Netbeans desde el siguiente link:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk-7-netbeans-download-432126.html&#34;&gt;http://www.oracle.com/technetwork/java/javase/downloads/jdk-7-netbeans-download-432126.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Librerías necesarias son:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GSON (&lt;a href=&#34;https://mvnrepository.com/artifact/com.google.code.gson/gson&#34;&gt;https://mvnrepository.com/artifact/com.google.code.gson/gson&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;JeroMQ (&lt;a href=&#34;https://mvnrepository.com/artifact/org.zeromq/jeromq&#34;&gt;https://mvnrepository.com/artifact/org.zeromq/jeromq&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to build .jar:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Right-click on the Project name&lt;/li&gt;
+&lt;li&gt;Select Properties&lt;/li&gt;
+&lt;li&gt;Click Packaging&lt;/li&gt;
+&lt;li&gt;Check Build JAR after Compiling&lt;/li&gt;
+&lt;li&gt;Check Compress JAR File&lt;/li&gt;
+&lt;li&gt;Click OK to accept changes&lt;/li&gt;
+&lt;li&gt;Right-click on a Project name&lt;/li&gt;
+&lt;li&gt;Select Build or Clean and Build&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;.jar is save in &lt;strong&gt;dist&lt;/strong&gt; folder&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
