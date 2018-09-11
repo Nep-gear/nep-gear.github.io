@@ -17,27 +17,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.18.1">
-    <title>Conferencias importantes en robótica</title>
+    <title>Desarrollo de ZeroMQ en MATLAB &lt; 2017b</title>
     <meta name="author" content="Enrique">
-    <meta name="keywords" content="Robotics">
+    <meta name="keywords" content="ZeroMQ">
 
     <link rel="icon" href="https://nep-gear.github.io/favicon.png">
     
 
     
-    <meta name="description" content="Este post contiene links e información de algunas de las conferencia más importantes en róbitca.
+    <meta name="description" content="Para desarrollar ZeroMQ para su uso en versiones &lt; 2017.b en Matlab se debe utilizar Java SDK 7.
 
 ">
-    <meta property="og:description" content="Este post contiene links e información de algunas de las conferencia más importantes en róbitca.
+    <meta property="og:description" content="Para desarrollar ZeroMQ para su uso en versiones &lt; 2017.b en Matlab se debe utilizar Java SDK 7.
 
 ">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Conferencias importantes en robótica">
-    <meta property="og:url" content="/2017/11/conferencias-importantes-en-rob%C3%B3tica/">
+    <meta property="og:title" content="Desarrollo de ZeroMQ en MATLAB &lt; 2017b">
+    <meta property="og:url" content="/2018/09/desarrollo-de-zeromq-en-matlab--2017b/">
     <meta property="og:site_name" content="Nep Gear">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Nep Gear">
-    <meta name="twitter:description" content="Este post contiene links e información de algunas de las conferencia más importantes en róbitca.
+    <meta name="twitter:description" content="Para desarrollar ZeroMQ para su uso en versiones &lt; 2017.b en Matlab se debe utilizar Java SDK 7.
 
 ">
     
@@ -51,7 +51,7 @@
     
 
     
-      <meta property="og:image" content="https://nep-gear.github.io/img/logos/nepdam.png">
+      <meta property="og:image" content="https://nep-gear.github.io/img/logos/zeromq.png">
     
     
     
@@ -212,13 +212,13 @@ ga('send', 'pageview');
             <div class="post-header main-content-wrap text-center">
   
     <h1 class="post-title" itemprop="headline">
-      Conferencias importantes en robótica
+      Desarrollo de ZeroMQ en MATLAB &lt; 2017b
     </h1>
   
   <div class="postShorten-meta post-meta">
-  <time itemprop="datePublished" datetime="2017-11-02T00:00:00Z">
+  <time itemprop="datePublished" datetime="2018-09-07T00:00:00Z">
     
-  November 2, 2017
+  September 7, 2018
 
   </time>
   
@@ -226,7 +226,7 @@ ga('send', 'pageview');
   
     <span>in</span>
     
-      <a class="category-link" href="https://nep-gear.github.io/categories/robotics">Robotics</a>
+      <a class="category-link" href="https://nep-gear.github.io/categories/zeromq">ZeroMQ</a>
     
   
 
@@ -237,77 +237,35 @@ ga('send', 'pageview');
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Este post contiene links e información de algunas de las conferencia más importantes en róbitca.</p>
+              <p>Para desarrollar ZeroMQ para su uso en versiones &lt; 2017.b en Matlab se debe utilizar Java SDK 7.</p>
 
 <p></p>
 
-<h2 id="principales-congresos-en-el-mundo">Principales congresos en el mundo:</h2>
+<p>Para el desarrollo de .jar que puedan utilizar Netbeans desde el siguiente link:</p>
 
-<p>De todos los congresos en el mundo en robótica solo dos destacan por ser los de mayor calidad, importancia y competitvidad. Estos son el ICRA y el IROS.</p>
+<p><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk-7-netbeans-download-432126.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk-7-netbeans-download-432126.html</a></p>
 
-<h3 id="international-conference-on-robotics-and-automation-icra">International Conference on Robotics and Automation (ICRA)</h3>
-
-<p>Celebrado regularmente a finales de mayo con deadline para mandar los artículos a principios de septiembre</p>
-
-<p>Próximos ICRA:</p>
+<p>Librerías necesarias son:</p>
 
 <ul>
-<li><strong>2019 Canada:</strong> 20-24 de Mayo del 2019, deadline: 10 Septiembre 2018 (<a href="http://www.icra2019.org/">http://www.icra2019.org/</a>)</li>
-<li><strong>2020 Francia:</strong> del 31 de Mayo al 4 de junio, deadline: 15 September 2019</li>
+<li>GSON (<a href="https://mvnrepository.com/artifact/com.google.code.gson/gson">https://mvnrepository.com/artifact/com.google.code.gson/gson</a>)</li>
+<li>JeroMQ (<a href="https://mvnrepository.com/artifact/org.zeromq/jeromq">https://mvnrepository.com/artifact/org.zeromq/jeromq</a>)</li>
 </ul>
 
-<figure>
-  <img src="https://nep-gear.github.io/img/conf/icra.png" align="right" style ="float:center" hspace = "20">
-  <figcaption>Entrada al ICRA 2016 en estocolmo</figcaption>
-</figure>
-
-<h3 id="international-conference-on-intelligent-robots-and-systems-iros">International Conference on Intelligent Robots and Systems  (IROS)</h3>
-
-<p>Celebrado regularmente a principio de octubre con deadline para mandar los artículos a principios de Marzo:</p>
-
-<p>Próximos IROS:</p>
+<p>How to build .jar:</p>
 
 <ul>
-<li><strong>2019 China:</strong>  3-8 de Noviembre del 2019, deadline: 1 de Marzo (<a href="http://www.iros2019.org/">http://www.iros2019.org/</a>)</li>
+<li>Right-click on the Project name</li>
+<li>Select Properties</li>
+<li>Click Packaging</li>
+<li>Check Build JAR after Compiling</li>
+<li>Check Compress JAR File</li>
+<li>Click OK to accept changes</li>
+<li>Right-click on a Project name</li>
+<li>Select Build or Clean and Build</li>
 </ul>
 
-<h2 id="otras-conferencias-importantes">Otras conferencias importantes:</h2>
-
-<p>A continuación se da una lista de algunas conferencias importantes en el area de Control, Human-Robot Interaction, Biorobotica y Machine Learning para robotica.</p>
-
-<h3 id="ieee-international-conference-on-robot-and-human-interactive-communication-ro-man">IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</h3>
-
-<ul>
-<li><strong>2018 China:</strong>  27-30 de Agosto del 2018, dealine: 5 de Marzo, 2018  <a href="http://ro-man2018.org/">http://ro-man2018.org/</a></li>
-</ul>
-
-<h3 id="annual-conference-on-human-robot-interaction">Annual Conference on Human-Robot Interaction</h3>
-
-<ul>
-<li><strong>2019 Korea</strong> 11-14 de Marzo, deadline: 10 de Octubre del 2018.</li>
-</ul>
-
-<h3 id="ieee-international-conference-on-robotic-computing">IEEE International Conference on Robotic Computing</h3>
-
-<p>Patrocinada por la IEEE computer society y la IEEE Robotics &amp; Automation Society.</p>
-
-<ul>
-<li><strong>2019 Italia</strong> 25-27 Febrero, (<a href="http://irc.asia.edu.tw/2019/">http://irc.asia.edu.tw/2019/</a>)</li>
-</ul>
-
-<h3 id="ieee-international-conference-ubiquitous-robots">IEEE International Conference Ubiquitous Robots</h3>
-
-<ul>
-<li><strong>2018 Hawaii</strong>  (<a href="http://www.ubiquitousrobots.org/2018/index.php">http://www.ubiquitousrobots.org/2018/index.php</a>)</li>
-</ul>
-
-<h3 id="more-ieee-conferences">More IEEE conferences:</h3>
-
-<p><a href="https://ras.papercept.net/">https://ras.papercept.net/</a></p>
-
-<figure>
-  <img src="https://nep-gear.github.io/img/duda.png" align="right" style ="float:center" hspace = "20">
-</figure>
+<p>.jar is save in <strong>dist</strong> folder</p>
               
             </div>
           </div>
@@ -319,7 +277,7 @@ ga('send', 'pageview');
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://nep-gear.github.io/tags/robotics/">Robotics</a>
+  <a class="tag tag--primary tag--small" href="https://nep-gear.github.io/tags/zeromq/">ZeroMQ</a>
 
                   </div>
                 
@@ -331,7 +289,7 @@ ga('send', 'pageview');
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/" data-tooltip="Instalar Nanomsg en Python (MAC OX)">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/09/como-mostrar-im%C3%A1genes-y-videos-en-la-tableta-de-pepper/" data-tooltip="Como mostrar imágenes y videos en la tableta de Pepper">
           
             <i class="fa fa-angle-left"></i>
             <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -339,7 +297,7 @@ ga('send', 'pageview');
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2017/11/latex-instalaci%C3%B3n-miktex-y-texmaker-windows/" data-tooltip="LaTeX: instalación MiKTeX y Texmaker (Windows)">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/" data-tooltip="Instalar Nanomsg en Python (MAC OX)">
           
             <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
             <i class="fa fa-angle-right"></i>
@@ -356,17 +314,17 @@ ga('send', 'pageview');
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fdesarrollo-de-zeromq-en-matlab--2017b%2f">
           <i class="fa fa-google-plus"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fdesarrollo-de-zeromq-en-matlab--2017b%2f">
           <i class="fa fa-facebook-official"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fdesarrollo-de-zeromq-en-matlab--2017b%2f">
           <i class="fa fa-twitter"></i>
         </a>
       </li>
@@ -413,7 +371,7 @@ ga('send', 'pageview');
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/" data-tooltip="Instalar Nanomsg en Python (MAC OX)">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/09/como-mostrar-im%C3%A1genes-y-videos-en-la-tableta-de-pepper/" data-tooltip="Como mostrar imágenes y videos en la tableta de Pepper">
           
             <i class="fa fa-angle-left"></i>
             <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -421,7 +379,7 @@ ga('send', 'pageview');
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2017/11/latex-instalaci%C3%B3n-miktex-y-texmaker-windows/" data-tooltip="LaTeX: instalación MiKTeX y Texmaker (Windows)">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/" data-tooltip="Instalar Nanomsg en Python (MAC OX)">
           
             <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
             <i class="fa fa-angle-right"></i>
@@ -438,17 +396,17 @@ ga('send', 'pageview');
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fdesarrollo-de-zeromq-en-matlab--2017b%2f">
           <i class="fa fa-google-plus"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fdesarrollo-de-zeromq-en-matlab--2017b%2f">
           <i class="fa fa-facebook-official"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fdesarrollo-de-zeromq-en-matlab--2017b%2f">
           <i class="fa fa-twitter"></i>
         </a>
       </li>
@@ -475,17 +433,17 @@ ga('send', 'pageview');
       <div id="share-options-bar" class="share-options-bar" data-behavior="4">
   <ul class="share-options">
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fdesarrollo-de-zeromq-en-matlab--2017b%2f">
         <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
       </a>
     </li>
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fdesarrollo-de-zeromq-en-matlab--2017b%2f">
         <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
       </a>
     </li>
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fdesarrollo-de-zeromq-en-matlab--2017b%2f">
         <i class="fa fa-twitter"></i><span>Share on Twitter</span>
       </a>
     </li>
@@ -764,9 +722,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/nep-gear.github.io\/2017\/11\/conferencias-importantes-en-rob%C3%B3tica\/';
+          this.page.url = 'https:\/\/nep-gear.github.io\/2018\/09\/desarrollo-de-zeromq-en-matlab--2017b\/';
           
-            this.page.identifier = '\/2017\/11\/conferencias-importantes-en-rob%C3%B3tica\/'
+            this.page.identifier = '\/2018\/09\/desarrollo-de-zeromq-en-matlab--2017b\/'
           
         };
         (function() {

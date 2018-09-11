@@ -9,6 +9,199 @@
     <atom:link href="https://nep-gear.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Como mostrar imágenes y videos en la tableta de Pepper</title>
+      <link>https://nep-gear.github.io/2018/09/como-mostrar-im%C3%A1genes-y-videos-en-la-tableta-de-pepper/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nep-gear.github.io/2018/09/como-mostrar-im%C3%A1genes-y-videos-en-la-tableta-de-pepper/</guid>
+      <description>&lt;p&gt;Este post muestra como mostrar imagenes y videos en Pepper usando el SDK en Python&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;configuración-en-choregraphe&#34;&gt;Configuración en Choregraphe&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;1.-&lt;/strong&gt; Abrir un nuevo projecto&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2.-&lt;/strong&gt; En project files agregar un nuevo directorio con el nombre de &lt;strong&gt;html&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;3.-&lt;/strong&gt; Abrir el archivo &lt;em&gt;manifest.xml&lt;/em&gt; y en &lt;em&gt;Application title&lt;/em&gt; colocar el título del behavior (por ejemplo images o videos)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4.-&lt;/strong&gt; En Application &lt;strong&gt;ID&lt;/strong&gt; colocar el mismo valor del titulo (este valor es fundamental cuando se usa el SDK)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;5.-&lt;/strong&gt; Abrir &lt;em&gt;File/Build Application Package&lt;/em&gt; y seleccionar donde guardar el paquete&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;6.-&lt;/strong&gt; Seleccionar la opción &lt;em&gt;Package and install project to the robot&lt;/em&gt; (está abajo del simulador en la pestaña &lt;em&gt;robot applications&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;7.-&lt;/strong&gt; Una vez instalado el paquete, este se puede utilizar para visualizar videos o imagenes usando el SDK en python&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;8.-&lt;/strong&gt; Toda imagen o video debe guardarse adentro del folder &lt;strong&gt;html&lt;/strong&gt; creado en paso 2.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;dirección-de-los-contenidos&#34;&gt;Dirección de los contenidos&lt;/h2&gt;
+
+&lt;p&gt;El path completo de los behaviors es:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/var/persistent/home/nao/.local/share/PackageManager/apps/&amp;lt;project_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Donde &amp;lt;&lt;strong&gt;project_name&lt;/strong&gt;&amp;gt; es el ID dado en paso 4 en la sección anterior.&lt;/p&gt;
+
+&lt;p&gt;Por lo que el folder html estaría en:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/var/persistent/home/nao/.local/share/PackageManager/apps/&amp;lt;project_name&amp;gt;/html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;código-para-mostrar-videos&#34;&gt;Código para mostrar videos&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;#! /usr/bin/env python
+# -*- encoding: UTF-8 -*-
+
+import qi
+import argparse
+import sys
+import time
+
+
+def main(session):
+    &amp;quot;&amp;quot;&amp;quot;
+    This example uses the playVideo method.
+    To Test ALTabletService, you need to run the script ON the robot.
+    &amp;quot;&amp;quot;&amp;quot;
+    # Get the service ALTabletService.
+
+    try:
+        tabletService = session.service(&amp;quot;ALTabletService&amp;quot;)
+
+        # Ensure that the tablet wifi is enable
+        tabletService.enableWifi()
+        tabletService.playVideo(&amp;quot;http://198.18.0.1/apps/&amp;lt;project_name&amp;gt;/video.mp4&amp;quot;)
+        
+        time.sleep(3)
+
+        # Display the time elapse / the total time of the video
+        print tabletService.getVideoPosition(), &amp;quot; / &amp;quot;, tabletService.getVideoLength()
+
+
+    except Exception, e:
+        print &amp;quot;Error was: &amp;quot;, e
+
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(&amp;quot;--ip&amp;quot;, type=str, default=&amp;quot;192.168.0.106&amp;quot;,
+                        help=&amp;quot;Robot IP address. On robot or Local Naoqi: use &#39;127.0.0.1&#39;.&amp;quot;)
+    parser.add_argument(&amp;quot;--port&amp;quot;, type=int, default=9559,
+                        help=&amp;quot;Naoqi port number&amp;quot;)
+
+    args = parser.parse_args()
+    session = qi.Session()
+    try:
+        session.connect(&amp;quot;tcp://&amp;quot; + args.ip + &amp;quot;:&amp;quot; + str(args.port))
+    except RuntimeError:
+        print (&amp;quot;Can&#39;t connect to Naoqi at ip \&amp;quot;&amp;quot; + args.ip + &amp;quot;\&amp;quot; on port &amp;quot; + str(args.port) +&amp;quot;.\n&amp;quot;
+               &amp;quot;Please check your script arguments. Run with -h option for help.&amp;quot;)
+        sys.exit(1)
+    main(session)
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aqui la función importante es:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;tabletService.playVideo(&amp;quot;http://198.18.0.1/apps/videos/video.mp4&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;donde &amp;lt;&lt;strong&gt;project_name&lt;/strong&gt;&amp;gt; es el ID dado en el paso 4 y &lt;strong&gt;video.mp4&lt;/strong&gt; es el nombre del archivo de video a reproducir el cual debe tener una resolución de 1280x800 con codec H.264 (MPG-4 parte 10)&lt;/p&gt;
+
+&lt;p&gt;Notar que no se escribe &lt;em&gt;html&lt;/em&gt; en el path&lt;/p&gt;
+
+&lt;h2 id=&#34;tomar-una-foto-y-guadarla-en-el-robot&#34;&gt;Tomar una foto y guadarla en el robot&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;# This test demonstrates how to use the ALPhotoCapture module.
+# Note that you might not have this module depending on your distribution
+import os
+import sys
+import time
+from naoqi import ALProxy
+
+# Replace this with your robot&#39;s IP address
+IP = &amp;quot;192.168.0.106&amp;quot;
+PORT = 9559
+
+# Create a proxy to ALPhotoCapture
+try:
+  photoCaptureProxy = ALProxy(&amp;quot;ALPhotoCapture&amp;quot;, IP, PORT)
+except Exception, e:
+  print &amp;quot;Error when creating ALPhotoCapture proxy:&amp;quot;
+  print str(e)
+  exit(1)
+
+photoCaptureProxy.setResolution(2)
+photoCaptureProxy.setPictureFormat(&amp;quot;jpg&amp;quot;)
+photoCaptureProxy.takePictures(1, &amp;quot;/var/persistent/home/nao/.local/share/PackageManager/apps/&amp;lt;project_name&amp;gt;/html/&amp;quot;, &amp;quot;image&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aqui la función importante es:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;photoCaptureProxy.takePictures(1, &amp;quot;/var/persistent/home/nao/.local/share/PackageManager/apps/i&amp;lt;project_name&amp;gt;/html/&amp;quot;, &amp;quot;image&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;donde &amp;lt;&lt;strong&gt;project_name&lt;/strong&gt;&amp;gt; es el ID dado en el paso 4, e &lt;strong&gt;&amp;ldquo;image&amp;rdquo;&lt;/strong&gt; es el nombre del archivo de la imagen de la cual se tomar 1 foto en formato .jpg&lt;/p&gt;
+
+&lt;p&gt;Notar que aqui se escribe &lt;em&gt;html&lt;/em&gt; en el path&lt;/p&gt;
+
+&lt;h2 id=&#34;código-para-mostrar-imágenes&#34;&gt;Código para mostrar imágenes&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;
+#! /usr/bin/env python
+# -*- encoding: UTF-8 -*-
+
+import qi
+import argparse
+import sys
+import time
+
+
+def main(session):
+    &amp;quot;&amp;quot;&amp;quot;
+    This example uses the showImage method.
+    To Test ALTabletService, you need to run the script ON the robot.
+    &amp;quot;&amp;quot;&amp;quot;
+    # Get the service ALTabletService.
+
+    try:
+        tabletService = session.service(&amp;quot;ALTabletService&amp;quot;)
+        tabletService.showImage(&amp;quot;http://198.18.0.1/apps/&amp;lt;project_name&amp;gt;/image_0.jpg&amp;quot;)
+
+      
+    except Exception, e:
+        print &amp;quot;Error was: &amp;quot;, e
+
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(&amp;quot;--ip&amp;quot;, type=str, default=&amp;quot;192.168.0.106&amp;quot;,
+                        help=&amp;quot;Robot IP address. On robot or Local Naoqi: use &#39;127.0.0.1&#39;.&amp;quot;)
+    parser.add_argument(&amp;quot;--port&amp;quot;, type=int, default=9559,
+                        help=&amp;quot;Naoqi port number&amp;quot;)
+
+    args = parser.parse_args()
+    session = qi.Session()
+    try:
+        session.connect(&amp;quot;tcp://&amp;quot; + args.ip + &amp;quot;:&amp;quot; + str(args.port))
+    except RuntimeError:
+        print (&amp;quot;Can&#39;t connect to Naoqi at ip \&amp;quot;&amp;quot; + args.ip + &amp;quot;\&amp;quot; on port &amp;quot; + str(args.port) +&amp;quot;.\n&amp;quot;
+               &amp;quot;Please check your script arguments. Run with -h option for help.&amp;quot;)
+        sys.exit(1)
+    main(session)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aqui la función importante es:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;tabletService.showImage(&amp;quot;http://198.18.0.1/apps/&amp;lt;project_name&amp;gt;/image_0.jpg&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;donde &amp;lt;&lt;strong&gt;project_name&lt;/strong&gt;&amp;gt; es el ID dado en el paso 4 e &lt;em&gt;image_0.jpg&lt;/em&gt; es el nombre del archivo de la imagen que se visulizará, la cual debe ser .jpg&lt;/p&gt;
+
+&lt;p&gt;Notar que no se escribe &lt;em&gt;html&lt;/em&gt; en el path&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Conferencias importantes en robótica</title>
       <link>https://nep-gear.github.io/2017/11/conferencias-importantes-en-rob%C3%B3tica/</link>
       <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>

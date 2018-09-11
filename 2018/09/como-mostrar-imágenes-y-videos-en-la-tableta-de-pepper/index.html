@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.18.1">
-    <title>Conferencias importantes en robótica</title>
+    <title>Como mostrar imágenes y videos en la tableta de Pepper</title>
     <meta name="author" content="Enrique">
     <meta name="keywords" content="Robotics">
 
@@ -25,19 +25,19 @@
     
 
     
-    <meta name="description" content="Este post contiene links e información de algunas de las conferencia más importantes en róbitca.
+    <meta name="description" content="Este post muestra como mostrar imagenes y videos en Pepper usando el SDK en Python
 
 ">
-    <meta property="og:description" content="Este post contiene links e información de algunas de las conferencia más importantes en róbitca.
+    <meta property="og:description" content="Este post muestra como mostrar imagenes y videos en Pepper usando el SDK en Python
 
 ">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Conferencias importantes en robótica">
-    <meta property="og:url" content="/2017/11/conferencias-importantes-en-rob%C3%B3tica/">
+    <meta property="og:title" content="Como mostrar imágenes y videos en la tableta de Pepper">
+    <meta property="og:url" content="/2018/09/como-mostrar-im%C3%A1genes-y-videos-en-la-tableta-de-pepper/">
     <meta property="og:site_name" content="Nep Gear">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Nep Gear">
-    <meta name="twitter:description" content="Este post contiene links e información de algunas de las conferencia más importantes en róbitca.
+    <meta name="twitter:description" content="Este post muestra como mostrar imagenes y videos en Pepper usando el SDK en Python
 
 ">
     
@@ -212,13 +212,13 @@ ga('send', 'pageview');
             <div class="post-header main-content-wrap text-center">
   
     <h1 class="post-title" itemprop="headline">
-      Conferencias importantes en robótica
+      Como mostrar imágenes y videos en la tableta de Pepper
     </h1>
   
   <div class="postShorten-meta post-meta">
-  <time itemprop="datePublished" datetime="2017-11-02T00:00:00Z">
+  <time itemprop="datePublished" datetime="2018-09-10T00:00:00Z">
     
-  November 2, 2017
+  September 10, 2018
 
   </time>
   
@@ -237,77 +237,191 @@ ga('send', 'pageview');
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Este post contiene links e información de algunas de las conferencia más importantes en róbitca.</p>
+              <p>Este post muestra como mostrar imagenes y videos en Pepper usando el SDK en Python</p>
 
 <p></p>
 
-<h2 id="principales-congresos-en-el-mundo">Principales congresos en el mundo:</h2>
-
-<p>De todos los congresos en el mundo en robótica solo dos destacan por ser los de mayor calidad, importancia y competitvidad. Estos son el ICRA y el IROS.</p>
-
-<h3 id="international-conference-on-robotics-and-automation-icra">International Conference on Robotics and Automation (ICRA)</h3>
-
-<p>Celebrado regularmente a finales de mayo con deadline para mandar los artículos a principios de septiembre</p>
-
-<p>Próximos ICRA:</p>
+<h2 id="configuración-en-choregraphe">Configuración en Choregraphe</h2>
 
 <ul>
-<li><strong>2019 Canada:</strong> 20-24 de Mayo del 2019, deadline: 10 Septiembre 2018 (<a href="http://www.icra2019.org/">http://www.icra2019.org/</a>)</li>
-<li><strong>2020 Francia:</strong> del 31 de Mayo al 4 de junio, deadline: 15 September 2019</li>
+<li><strong>1.-</strong> Abrir un nuevo projecto</li>
+<li><strong>2.-</strong> En project files agregar un nuevo directorio con el nombre de <strong>html</strong>.</li>
+<li><strong>3.-</strong> Abrir el archivo <em>manifest.xml</em> y en <em>Application title</em> colocar el título del behavior (por ejemplo images o videos)</li>
+<li><strong>4.-</strong> En Application <strong>ID</strong> colocar el mismo valor del titulo (este valor es fundamental cuando se usa el SDK)</li>
+<li><strong>5.-</strong> Abrir <em>File/Build Application Package</em> y seleccionar donde guardar el paquete</li>
+<li><strong>6.-</strong> Seleccionar la opción <em>Package and install project to the robot</em> (está abajo del simulador en la pestaña <em>robot applications</em>).</li>
+<li><strong>7.-</strong> Una vez instalado el paquete, este se puede utilizar para visualizar videos o imagenes usando el SDK en python</li>
+<li><strong>8.-</strong> Toda imagen o video debe guardarse adentro del folder <strong>html</strong> creado en paso 2.</li>
 </ul>
 
-<figure>
-  <img src="https://nep-gear.github.io/img/conf/icra.png" align="right" style ="float:center" hspace = "20">
-  <figcaption>Entrada al ICRA 2016 en estocolmo</figcaption>
-</figure>
+<h2 id="dirección-de-los-contenidos">Dirección de los contenidos</h2>
 
-<h3 id="international-conference-on-intelligent-robots-and-systems-iros">International Conference on Intelligent Robots and Systems  (IROS)</h3>
+<p>El path completo de los behaviors es:</p>
 
-<p>Celebrado regularmente a principio de octubre con deadline para mandar los artículos a principios de Marzo:</p>
+<pre><code>/var/persistent/home/nao/.local/share/PackageManager/apps/&lt;project_name&gt;
+</code></pre>
 
-<p>Próximos IROS:</p>
+<p>Donde &lt;<strong>project_name</strong>&gt; es el ID dado en paso 4 en la sección anterior.</p>
 
-<ul>
-<li><strong>2019 China:</strong>  3-8 de Noviembre del 2019, deadline: 1 de Marzo (<a href="http://www.iros2019.org/">http://www.iros2019.org/</a>)</li>
-</ul>
+<p>Por lo que el folder html estaría en:</p>
 
-<h2 id="otras-conferencias-importantes">Otras conferencias importantes:</h2>
+<pre><code>/var/persistent/home/nao/.local/share/PackageManager/apps/&lt;project_name&gt;/html
+</code></pre>
 
-<p>A continuación se da una lista de algunas conferencias importantes en el area de Control, Human-Robot Interaction, Biorobotica y Machine Learning para robotica.</p>
+<h2 id="código-para-mostrar-videos">Código para mostrar videos</h2>
 
-<h3 id="ieee-international-conference-on-robot-and-human-interactive-communication-ro-man">IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</h3>
+<pre><code class="language-Python">#! /usr/bin/env python
+# -*- encoding: UTF-8 -*-
 
-<ul>
-<li><strong>2018 China:</strong>  27-30 de Agosto del 2018, dealine: 5 de Marzo, 2018  <a href="http://ro-man2018.org/">http://ro-man2018.org/</a></li>
-</ul>
+import qi
+import argparse
+import sys
+import time
 
-<h3 id="annual-conference-on-human-robot-interaction">Annual Conference on Human-Robot Interaction</h3>
 
-<ul>
-<li><strong>2019 Korea</strong> 11-14 de Marzo, deadline: 10 de Octubre del 2018.</li>
-</ul>
+def main(session):
+    &quot;&quot;&quot;
+    This example uses the playVideo method.
+    To Test ALTabletService, you need to run the script ON the robot.
+    &quot;&quot;&quot;
+    # Get the service ALTabletService.
 
-<h3 id="ieee-international-conference-on-robotic-computing">IEEE International Conference on Robotic Computing</h3>
+    try:
+        tabletService = session.service(&quot;ALTabletService&quot;)
 
-<p>Patrocinada por la IEEE computer society y la IEEE Robotics &amp; Automation Society.</p>
+        # Ensure that the tablet wifi is enable
+        tabletService.enableWifi()
+        tabletService.playVideo(&quot;http://198.18.0.1/apps/&lt;project_name&gt;/video.mp4&quot;)
+        
+        time.sleep(3)
 
-<ul>
-<li><strong>2019 Italia</strong> 25-27 Febrero, (<a href="http://irc.asia.edu.tw/2019/">http://irc.asia.edu.tw/2019/</a>)</li>
-</ul>
+        # Display the time elapse / the total time of the video
+        print tabletService.getVideoPosition(), &quot; / &quot;, tabletService.getVideoLength()
 
-<h3 id="ieee-international-conference-ubiquitous-robots">IEEE International Conference Ubiquitous Robots</h3>
 
-<ul>
-<li><strong>2018 Hawaii</strong>  (<a href="http://www.ubiquitousrobots.org/2018/index.php">http://www.ubiquitousrobots.org/2018/index.php</a>)</li>
-</ul>
+    except Exception, e:
+        print &quot;Error was: &quot;, e
 
-<h3 id="more-ieee-conferences">More IEEE conferences:</h3>
 
-<p><a href="https://ras.papercept.net/">https://ras.papercept.net/</a></p>
+if __name__ == &quot;__main__&quot;:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(&quot;--ip&quot;, type=str, default=&quot;192.168.0.106&quot;,
+                        help=&quot;Robot IP address. On robot or Local Naoqi: use '127.0.0.1'.&quot;)
+    parser.add_argument(&quot;--port&quot;, type=int, default=9559,
+                        help=&quot;Naoqi port number&quot;)
 
-<figure>
-  <img src="https://nep-gear.github.io/img/duda.png" align="right" style ="float:center" hspace = "20">
-</figure>
+    args = parser.parse_args()
+    session = qi.Session()
+    try:
+        session.connect(&quot;tcp://&quot; + args.ip + &quot;:&quot; + str(args.port))
+    except RuntimeError:
+        print (&quot;Can't connect to Naoqi at ip \&quot;&quot; + args.ip + &quot;\&quot; on port &quot; + str(args.port) +&quot;.\n&quot;
+               &quot;Please check your script arguments. Run with -h option for help.&quot;)
+        sys.exit(1)
+    main(session)
+
+
+</code></pre>
+
+<p>Aqui la función importante es:</p>
+
+<pre><code class="language-Python">tabletService.playVideo(&quot;http://198.18.0.1/apps/videos/video.mp4&quot;)
+</code></pre>
+
+<p>donde &lt;<strong>project_name</strong>&gt; es el ID dado en el paso 4 y <strong>video.mp4</strong> es el nombre del archivo de video a reproducir el cual debe tener una resolución de 1280x800 con codec H.264 (MPG-4 parte 10)</p>
+
+<p>Notar que no se escribe <em>html</em> en el path</p>
+
+<h2 id="tomar-una-foto-y-guadarla-en-el-robot">Tomar una foto y guadarla en el robot</h2>
+
+<pre><code class="language-Python"># This test demonstrates how to use the ALPhotoCapture module.
+# Note that you might not have this module depending on your distribution
+import os
+import sys
+import time
+from naoqi import ALProxy
+
+# Replace this with your robot's IP address
+IP = &quot;192.168.0.106&quot;
+PORT = 9559
+
+# Create a proxy to ALPhotoCapture
+try:
+  photoCaptureProxy = ALProxy(&quot;ALPhotoCapture&quot;, IP, PORT)
+except Exception, e:
+  print &quot;Error when creating ALPhotoCapture proxy:&quot;
+  print str(e)
+  exit(1)
+
+photoCaptureProxy.setResolution(2)
+photoCaptureProxy.setPictureFormat(&quot;jpg&quot;)
+photoCaptureProxy.takePictures(1, &quot;/var/persistent/home/nao/.local/share/PackageManager/apps/&lt;project_name&gt;/html/&quot;, &quot;image&quot;)
+</code></pre>
+
+<p>Aqui la función importante es:</p>
+
+<pre><code class="language-Python">photoCaptureProxy.takePictures(1, &quot;/var/persistent/home/nao/.local/share/PackageManager/apps/i&lt;project_name&gt;/html/&quot;, &quot;image&quot;)
+</code></pre>
+
+<p>donde &lt;<strong>project_name</strong>&gt; es el ID dado en el paso 4, e <strong>&ldquo;image&rdquo;</strong> es el nombre del archivo de la imagen de la cual se tomar 1 foto en formato .jpg</p>
+
+<p>Notar que aqui se escribe <em>html</em> en el path</p>
+
+<h2 id="código-para-mostrar-imágenes">Código para mostrar imágenes</h2>
+
+<pre><code class="language-Python">
+#! /usr/bin/env python
+# -*- encoding: UTF-8 -*-
+
+import qi
+import argparse
+import sys
+import time
+
+
+def main(session):
+    &quot;&quot;&quot;
+    This example uses the showImage method.
+    To Test ALTabletService, you need to run the script ON the robot.
+    &quot;&quot;&quot;
+    # Get the service ALTabletService.
+
+    try:
+        tabletService = session.service(&quot;ALTabletService&quot;)
+        tabletService.showImage(&quot;http://198.18.0.1/apps/&lt;project_name&gt;/image_0.jpg&quot;)
+
+      
+    except Exception, e:
+        print &quot;Error was: &quot;, e
+
+
+if __name__ == &quot;__main__&quot;:
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(&quot;--ip&quot;, type=str, default=&quot;192.168.0.106&quot;,
+                        help=&quot;Robot IP address. On robot or Local Naoqi: use '127.0.0.1'.&quot;)
+    parser.add_argument(&quot;--port&quot;, type=int, default=9559,
+                        help=&quot;Naoqi port number&quot;)
+
+    args = parser.parse_args()
+    session = qi.Session()
+    try:
+        session.connect(&quot;tcp://&quot; + args.ip + &quot;:&quot; + str(args.port))
+    except RuntimeError:
+        print (&quot;Can't connect to Naoqi at ip \&quot;&quot; + args.ip + &quot;\&quot; on port &quot; + str(args.port) +&quot;.\n&quot;
+               &quot;Please check your script arguments. Run with -h option for help.&quot;)
+        sys.exit(1)
+    main(session)
+</code></pre>
+
+<p>Aqui la función importante es:</p>
+
+<pre><code class="language-Python">tabletService.showImage(&quot;http://198.18.0.1/apps/&lt;project_name&gt;/image_0.jpg&quot;)
+</code></pre>
+
+<p>donde &lt;<strong>project_name</strong>&gt; es el ID dado en el paso 4 e <em>image_0.jpg</em> es el nombre del archivo de la imagen que se visulizará, la cual debe ser .jpg</p>
+
+<p>Notar que no se escribe <em>html</em> en el path</p>
               
             </div>
           </div>
@@ -331,7 +445,7 @@ ga('send', 'pageview');
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/" data-tooltip="Instalar Nanomsg en Python (MAC OX)">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2020/06/welcome-to-my-blog/" data-tooltip="Welcome to my blog">
           
             <i class="fa fa-angle-left"></i>
             <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -339,7 +453,7 @@ ga('send', 'pageview');
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2017/11/latex-instalaci%C3%B3n-miktex-y-texmaker-windows/" data-tooltip="LaTeX: instalación MiKTeX y Texmaker (Windows)">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/09/desarrollo-de-zeromq-en-matlab--2017b/" data-tooltip="Desarrollo de ZeroMQ en MATLAB &lt; 2017b">
           
             <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
             <i class="fa fa-angle-right"></i>
@@ -356,17 +470,17 @@ ga('send', 'pageview');
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fcomo-mostrar-im%25C3%25A1genes-y-videos-en-la-tableta-de-pepper%2f">
           <i class="fa fa-google-plus"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fcomo-mostrar-im%25C3%25A1genes-y-videos-en-la-tableta-de-pepper%2f">
           <i class="fa fa-facebook-official"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fcomo-mostrar-im%25C3%25A1genes-y-videos-en-la-tableta-de-pepper%2f">
           <i class="fa fa-twitter"></i>
         </a>
       </li>
@@ -413,7 +527,7 @@ ga('send', 'pageview');
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/07/instalar-nanomsg-en-python-mac-ox/" data-tooltip="Instalar Nanomsg en Python (MAC OX)">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2020/06/welcome-to-my-blog/" data-tooltip="Welcome to my blog">
           
             <i class="fa fa-angle-left"></i>
             <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -421,7 +535,7 @@ ga('send', 'pageview');
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2017/11/latex-instalaci%C3%B3n-miktex-y-texmaker-windows/" data-tooltip="LaTeX: instalación MiKTeX y Texmaker (Windows)">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://nep-gear.github.io/2018/09/desarrollo-de-zeromq-en-matlab--2017b/" data-tooltip="Desarrollo de ZeroMQ en MATLAB &lt; 2017b">
           
             <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
             <i class="fa fa-angle-right"></i>
@@ -438,17 +552,17 @@ ga('send', 'pageview');
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fcomo-mostrar-im%25C3%25A1genes-y-videos-en-la-tableta-de-pepper%2f">
           <i class="fa fa-google-plus"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fcomo-mostrar-im%25C3%25A1genes-y-videos-en-la-tableta-de-pepper%2f">
           <i class="fa fa-facebook-official"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fcomo-mostrar-im%25C3%25A1genes-y-videos-en-la-tableta-de-pepper%2f">
           <i class="fa fa-twitter"></i>
         </a>
       </li>
@@ -475,17 +589,17 @@ ga('send', 'pageview');
       <div id="share-options-bar" class="share-options-bar" data-behavior="4">
   <ul class="share-options">
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fcomo-mostrar-im%25C3%25A1genes-y-videos-en-la-tableta-de-pepper%2f">
         <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
       </a>
     </li>
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fcomo-mostrar-im%25C3%25A1genes-y-videos-en-la-tableta-de-pepper%2f">
         <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
       </a>
     </li>
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2017%2f11%2fconferencias-importantes-en-rob%25C3%25B3tica%2f">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnep-gear.github.io%2f2018%2f09%2fcomo-mostrar-im%25C3%25A1genes-y-videos-en-la-tableta-de-pepper%2f">
         <i class="fa fa-twitter"></i><span>Share on Twitter</span>
       </a>
     </li>
@@ -764,9 +878,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/nep-gear.github.io\/2017\/11\/conferencias-importantes-en-rob%C3%B3tica\/';
+          this.page.url = 'https:\/\/nep-gear.github.io\/2018\/09\/como-mostrar-im%C3%A1genes-y-videos-en-la-tableta-de-pepper\/';
           
-            this.page.identifier = '\/2017\/11\/conferencias-importantes-en-rob%C3%B3tica\/'
+            this.page.identifier = '\/2018\/09\/como-mostrar-im%C3%A1genes-y-videos-en-la-tableta-de-pepper\/'
           
         };
         (function() {

@@ -9,12 +9,14 @@
     <atom:link href="https://nep-gear.github.io/tags/zeromq/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Desarrollo de NEP en MATLAB &lt; 2017b</title>
-      <link>https://nep-gear.github.io/2018/09/desarrollo-de-nep-en-matlab--2017b/</link>
+      <title>Desarrollo de ZeroMQ en MATLAB &lt; 2017b</title>
+      <link>https://nep-gear.github.io/2018/09/desarrollo-de-zeromq-en-matlab--2017b/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://nep-gear.github.io/2018/09/desarrollo-de-nep-en-matlab--2017b/</guid>
-      <description>&lt;p&gt;Para desarrollar NEP en versiones anteriores a 2017.b en Matlab se debe utilizar Java SDK 7.&lt;/p&gt;
+      <guid>https://nep-gear.github.io/2018/09/desarrollo-de-zeromq-en-matlab--2017b/</guid>
+      <description>&lt;p&gt;Para desarrollar ZeroMQ para su uso en versiones &amp;lt; 2017.b en Matlab se debe utilizar Java SDK 7.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Para el desarrollo de .jar que puedan utilizar Netbeans desde el siguiente link:&lt;/p&gt;
 
@@ -40,8 +42,7 @@
 &lt;li&gt;Select Build or Clean and Build&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;.jar is save in &lt;strong&gt;dist&lt;/strong&gt; folder&lt;/p&gt;
-</description>
+&lt;p&gt;.jar is save in &lt;strong&gt;dist&lt;/strong&gt; folder&lt;/p&gt;</description>
     </item>
     
   </channel>
